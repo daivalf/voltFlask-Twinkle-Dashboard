@@ -109,11 +109,6 @@
                     <div class="d-block mb-3 mb-sm-0">
                         <div class="fs-5 fw-normal mb-2">Discount</div>
                         <h2 class="fs-3 fw-extrabold">208 Times</h2>
-                        <!-- <div class="small mt-2"> 
-                            <span class="fw-normal me-2">Rate From</span>                              
-                            <span class="fas fa-angle-up text-success"></span>                                   
-                            <span class="text-success fw-bold"> 237.57%</span>
-                        </div> -->
                     </div>
                 </div>
                 <div class="card-body">
@@ -304,28 +299,41 @@
                 <div class="col-12 mb-4">
                     <div class="card border-0 shadow">
                         <div class="card-header">
-                            <div class="row align-items-center">
+                            <div class="row align-items-center justify-content-between"> <!-- Use justify-content-between to align items to the left and right -->
                                 <div class="col">
                                     <h2 class="fs-5 fw-bold mb-0">Selling Area in Indonesia</h2>
+                                </div>
+                                <div class="col-auto"> <!-- Use col-auto to allow the input element to determine its own width -->
+                                    <div class="align-items-end">
+                                        <input type="file" id="fileInput" accept=".xlsx">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="table-responsive py-4">
-<!-- Pagination -->
-<nav class="mt-3">
-    <ul class="pagination justify-content-end" id="paginationList">
-        <!-- Previous Button -->
-        <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1">Previous</a>
-        </li>
-        <!-- Page Numbers (These will be dynamically generated) -->
-        <!-- Next Button -->
-        <li class="page-item">
-            <a class="page-link" href="#">Next</a>
-        </li>
-    </ul>
-</nav>
-
+                                <div class="col-xl-12 d-flex justify-content-between align-items-center">
+                                    <!-- Search Bar Column -->
+                                    <div class="col-xl-6 mb-3 ms-3">
+                                        <input type="text" id="searchInput" class="form-control" placeholder="Search by Province / Category / Sold Item">
+                                    </div>
+                                    <!-- Pagination Column -->
+                                    <div class="col-xl-3 d-flex justify-content-end me-3" id="paginationColumn"> <!-- Adjust the width as needed -->
+                                        <nav class="">
+                                            <ul class="pagination" id="paginationList">
+                                                <!-- Previous Button -->
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                </li>
+                                                <!-- Page Numbers (These will be dynamically generated) -->
+                                                <!-- Next Button -->
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">Next</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            
 <table class="table align-items-center table-flush">
     <thead class="thead-light">
         <tr>
@@ -338,14 +346,57 @@
     <tbody id="tableBody"></tbody>
 </table>
 
-<div class="align-items-end card border-0 shadow">
-    <input type="file" id="fileInput" accept=".xlsx">
-</div>
-
 <script>
     let rows = [];
     let totalRows = 0;
     let fileSelected = false;
+
+    // Input element for the search bar
+const searchInput = document.getElementById('searchInput');
+
+// Attach an input event listener to the search input
+searchInput.addEventListener('input', () => {
+        const query = searchInput.value.trim(); // Trim whitespace from input
+        performSearch(query);
+        togglePagination(query);
+    });
+
+    function togglePagination(query) {
+    const paginationColumn = document.getElementById('paginationColumn');
+    const paginationList = document.getElementById('paginationList');
+
+    if (query !== '') {
+        paginationColumn.style.visibility = 'hidden'; // Make the pagination column invisible
+    } else {
+        paginationColumn.style.visibility = 'visible'; // Make the pagination column visible
+    }
+}
+
+// Function to perform the search
+function performSearch(query) {
+    const tableBody = document.getElementById('tableBody');
+    tableBody.innerHTML = '';
+
+    const columnsToShow = [11, 3, 14, 4]; // Indices of columns to show
+
+    rows.forEach((row, rowIndex) => {
+        if (rowIndex >= 1) { // Skip header row
+            const province = row[11] || '';
+            const category = row[3] || '';
+            const soldItem = row[14] || '';
+            if (province.toLowerCase().includes(query.toLowerCase()) || category.toLowerCase().includes(query.toLowerCase()) || soldItem.toLowerCase().includes(query.toLowerCase())) {
+                const tr = document.createElement('tr');
+                columnsToShow.forEach((columnIndex) => {
+                    const td = document.createElement('td');
+                    td.textContent = row[columnIndex] || '';
+                    tr.appendChild(td);
+                });
+                tableBody.appendChild(tr);
+            }
+        }
+    });
+}
+
     document.getElementById('fileInput').addEventListener('change', async (event) => {
         const file = event.target.files[0];
         if (file) {
@@ -364,7 +415,7 @@
                 console.log(totalRows);
 
                 // Calculate totalPages
-                const rowsPerPage = 10;
+                const rowsPerPage = 15;
                 const totalPages = Math.ceil(totalRows / rowsPerPage);
 
                 // Calculate current page (you can get this from user input or other logic)
@@ -391,6 +442,8 @@
             };
             reader.readAsArrayBuffer(file);
         }
+        searchInput.value = '';
+        performSearch('');
     });
 
     document.getElementById('fileInput').addEventListener('change', async (event) => {
@@ -488,7 +541,7 @@ function updatePaginationLinks(currentPage, totalPages) {
     }
 
     const tableBody = document.getElementById('tableBody');
-    const rowsPerPage = 10;
+    const rowsPerPage = 15;
     const startIndex = (pageNumber - 1) * rowsPerPage;
     const endIndex = Math.min(startIndex + rowsPerPage, totalRows);
 

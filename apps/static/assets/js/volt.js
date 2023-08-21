@@ -177,10 +177,13 @@ d.addEventListener("DOMContentLoaded", function(event) {
             labels: ['A', 'B', 'C', 'D']
           }, {
             donut: true,
-            donutWidth: 50,
+            donutWidth: 60,
             // donutSolid: true,
             // startAngle: 270,
             showLabel: true,
+            plugins: [
+                Chartist.plugins.tooltip() // Add the tooltips plugin
+            ],
           });
     }
 
