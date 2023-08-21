@@ -7,6 +7,8 @@
 
 {% block content %}
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+
     <div class="py-4">
         <div class="dropdown">
             </div>
@@ -192,269 +194,8 @@
         </div>-->
     
     <div class="row">
-        <div class="col-12 col-xl-8">
-            <div class="row">
-                <!--Table Daerah Penjualan Start-->
-                <div class="col-12 mb-4">
-                    <div class="card border-0 shadow">
-                        <div class="card-header">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <h2 class="fs-5 fw-bold mb-0">Selling Area in Indonesia</h2>
-                                </div>
-                                <!--
-                                <div class="col text-end">
-                                    <a href="#" class="btn btn-sm btn-primary">See all</a>
-                                </div>-->
-                            </div>
-                        </div>
-                        <div class="table-responsive py-4">
-                            <table class="table align-items-center table-flush">
-                                <thead class="thead-light">
-                                <tr>
-                                    <th class="border-bottom" scope="col">Province</th>
-                                    <th class="border-bottom" scope="col">Category</th>
-                                    <th class="border-bottom" scope="col">Sold Item</th>
-                                    <th class="border-bottom" scope="col">Quantity</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        Bali
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Camping
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Binocular
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"  clip-rule="evenodd"></path></svg>
-                                            1
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Compass
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-                                            2
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Flashlight
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"  clip-rule="evenodd"></path></svg>
-                                            5
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Twinkle Rain Coat M
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"  clip-rule="evenodd"></path></svg>
-                                            4
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Twinkle Rain Coat S
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"  clip-rule="evenodd"></path></svg>
-                                            4
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Walkie Talkie
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"  clip-rule="evenodd"></path></svg>
-                                            3
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Chef
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Eggs
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-success me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"  clip-rule="evenodd"></path></svg>
-                                            1
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                    Sweet & Spices
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-success me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"  clip-rule="evenodd"></path></svg>
-                                            1
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Twinkle Apron M
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"  clip-rule="evenodd"></path></svg>
-                                            1
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Solar System
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Solar Board
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"  clip-rule="evenodd"></path></svg>
-                                            2
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Planet & Flashcards
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"  clip-rule="evenodd"></path></svg>
-                                            2
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-gray-900" scope="row">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        Solar System Bundle
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-danger me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"  clip-rule="evenodd"></path></svg>
-                                            1
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!--<tr>
-                                    <th class="text-gray-900" scope="row">
-                                        /demo/admin/modals.html
-                                    </th>
-                                    <td class="fw-bolder text-gray-500">
-                                        1,483
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        $19
-                                    </td>
-                                    <td class="fw-bolder text-gray-500">
-                                        <div class="d-flex">
-                                            <svg class="icon icon-xs text-success me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                                            26,12%
-                                        </div>
-                                    </td>
-                                </tr>-->
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <!--Table Daerah Penjualan End-->
-            </div>
-        </div>
-
-        <!--Pie Chart Start-->
-        
-        <!--Pie Chart End-->
-
         <!--[Total Orders & Production] Start-->
-        <div class="col-12 col-xl-4">
+        <div class="col-12 col-xl-6">
             <div class="col-12 px-0 mb-4">
                 <div class="card border-0 shadow">
                     <div class="card-header d-flex flex-row align-items-center flex-0 border-bottom">
@@ -462,8 +203,7 @@
                             <div class="h6 fw-normal text-gray mb-2">Total Order </div>
                             <h2 class="h3 fw-extrabold">1.177</h2>
                             <div class="small mt-2">                               
-                                <span class="fas fa-angle-up text-success"></span>                                   
-                                <!--<span class="text-success fw-bold">18.2%</span>-->
+                                <span class="fas fa-angle-up text-success"></span>
                             </div>
                         </div>
                         <div class="d-block">
@@ -490,7 +230,9 @@
                     </div>
                 </div>
             </div>
+        </div>
             <!-- Selling Platform Usage Start-->
+        <div class="col-12 col-xl-6">
             <div class="col-12 col-xxl-6 mb-4">
                 <div class="card border-0 shadow">
                     <div class="card-header border-bottom d-flex align-items-center justify-content-between">
@@ -549,118 +291,234 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Project 4
-                        <div class="row align-items-center mb-3">
-                            <div class="col-auto">
-                                <svg class="icon icon-sm text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
-                            </div>
-                            
-                            <div class="col">
-                                <div class="progress-wrapper">
-                                    <div class="progress-info">
-                                        <div class="h6 mb-0">Backend for Themesberg v2</div>
-                                        <div class="small fw-bold text-gray-500"><span>34 %</span></div>
-                                    </div>
-                                    <div class="progress mb-0">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100" style="width: 34%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    -->
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="col-12 px-0 mb-4">
-                <div class="card border-0 shadow">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between border-bottom pb-3">
-                            <div>
-                                <div class="h6 mb-0 d-flex align-items-center">
-                                    <svg class="icon icon-xs text-gray-500 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"></path></svg>
-                                    Global Rank
-                                </div>
-                            </div>
-                            <div>
-                                <a href="#" class="d-flex align-items-center fw-bold">
-                                    #755
-                                    <svg class="icon icon-xs text-gray-500 ms-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between border-bottom py-3">
-                            <div>
-                                <div class="h6 mb-0 d-flex align-items-center">
-                                    <svg class="icon icon-xs text-gray-500 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clip-rule="evenodd"></path></svg>
-                                    Country Rank
-                                </div>
-                                <div class="small card-stats">
-                                    United States
-                                    <svg class="icon icon-xs text-success" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
-                                </div>
-                            </div>
-                            <div>
-                                <a href="#" class="d-flex align-items-center fw-bold">
-                                    #32
-                                    <svg class="icon icon-xs text-gray-500 ms-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between pt-3">
-                            <div>
-                                <div class="h6 mb-0 d-flex align-items-center">
-                                    <svg class="icon icon-xs text-gray-500 me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z" clip-rule="evenodd"></path><path d="M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z"></path></svg>
-                                    Category Rank
-                                </div>
-                                <div class="small card-stats">
-                                    Computers Electronics > Technology
-                                    <svg class="icon icon-xs text-success" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
-                                </div>
-                            </div>
-                            <div>
-                                <a href="#" class="d-flex align-items-center fw-bold">
-                                    #11
-                                    <svg class="icon icon-xs text-gray-500 ms-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-            <!--
-            <div class="col-12 px-0">
-                <div class="card border-0 shadow">
-                    <div class="card-body">
-                        <h2 class="fs-5 fw-bold mb-1">Acquisition</h2>
-                        <p>Tells you where your visitors originated from, such as search engines, social networks or website referrals.</p>
-                        <div class="d-block">
-                            <div class="d-flex align-items-center me-5">
-                                <div class="icon-shape icon-sm icon-shape-danger rounded me-3">
-                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z" clip-rule="evenodd"></path></svg>
-                                </div>
-                                <div class="d-block">
-                                    <label class="mb-0">Bounce Rate</label>
-                                    <h4 class="mb-0">33.50%</h4>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center pt-3">
-                                <div class="icon-shape icon-sm icon-shape-purple rounded me-3">
-                                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path></svg>                                        </div>
-                                <div class="d-block">
-                                    <label class="mb-0">Sessions</label>
-                                    <h4 class="mb-0">9,567</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
         </div>
         <!--[Total Orders & Production] End-->
     </div>
+
+    <!--Table Daerah Penjualan Start-->
+    <div class="row">
+        <div class="col-12 col-xl-12">
+                <div class="col-12 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-header">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h2 class="fs-5 fw-bold mb-0">Selling Area in Indonesia</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive py-4">
+<!-- Pagination -->
+<nav class="mt-3">
+    <ul class="pagination justify-content-end" id="paginationList">
+        <!-- Previous Button -->
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <!-- Page Numbers (These will be dynamically generated) -->
+        <!-- Next Button -->
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+
+<table class="table align-items-center table-flush">
+    <thead class="thead-light">
+        <tr>
+            <th class="border-bottom" scope="col">Province</th>
+            <th class="border-bottom" scope="col">Category</th>
+            <th class="border-bottom" scope="col">Sold Item</th>
+            <th class="border-bottom" scope="col">Quantity</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<div class="align-items-end card border-0 shadow">
+    <input type="file" id="fileInput" accept=".xlsx">
+</div>
+
+<script>
+    let rows = [];
+    let totalRows = 0;
+    let fileSelected = false;
+    document.getElementById('fileInput').addEventListener('change', async (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = async function (e) {
+                const data = new Uint8Array(e.target.result);
+                const workbook = XLSX.read(data, { type: 'array' });
+                const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+                const tableBody = document.getElementById('tableBody');
+                tableBody.innerHTML = '';
+
+                rows = await XLSX.utils.sheet_to_json(worksheet, { header: 1 }); // Assign data to the global rows variable
+
+                // Calculate totalRows
+                totalRows = 1190;
+                console.log(totalRows);
+
+                // Calculate totalPages
+                const rowsPerPage = 10;
+                const totalPages = Math.ceil(totalRows / rowsPerPage);
+
+                // Calculate current page (you can get this from user input or other logic)
+                const currentPage = 1;
+
+                const startIndex = (currentPage - 1) * rowsPerPage;
+                const endIndex = Math.min(startIndex + rowsPerPage, totalRows);
+
+                rows.forEach((row, rowIndex) => {
+                    if (rowIndex >= 1 && rowIndex >= startIndex && rowIndex < endIndex) {
+                        const tr = document.createElement('tr');
+                        const columnsToShow = [11, 3, 14, 4]; // Indices of columns to show
+                        columnsToShow.forEach((columnIndex) => {
+                            const td = document.createElement('td');
+                            td.textContent = row[columnIndex] || '';
+                            tr.appendChild(td);
+                        });
+                        tableBody.appendChild(tr);
+                    }
+                });
+
+                // Update pagination links
+                updatePaginationLinks(currentPage, totalPages);
+            };
+            reader.readAsArrayBuffer(file);
+        }
+    });
+
+    document.getElementById('fileInput').addEventListener('change', async (event) => {
+                            const file = event.target.files[0];
+                            if (file) {
+                                fileSelected = true;
+                                hideFileInput(); // Set the fileSelected flag
+                                // Rest of your file handling logic...
+                            }
+                        });
+
+function hideFileInput() {
+    const fileInput = document.getElementById('fileInput');
+    if (fileSelected) {
+        fileInput.style.display = 'none';
+    }
+}
+
+function updatePaginationLinks(currentPage, totalPages) {
+    const paginationList = document.getElementById('paginationList');
+    paginationList.innerHTML = ''; // Clear existing pagination links
+
+    const maxVisiblePageLinks = 5; // You can adjust this number as needed
+    let startPage = Math.max(currentPage - Math.floor(maxVisiblePageLinks / 2), 1);
+    let endPage = Math.min(startPage + maxVisiblePageLinks - 1, totalPages);
+
+    // Ensure that there are enough pages to fill maxVisiblePageLinks
+    while (endPage - startPage + 1 < maxVisiblePageLinks) {
+        if (startPage > 1) {
+            startPage--;
+        }
+        if (endPage < totalPages) {
+            endPage++;
+        }
+    }
+    const previousLi = document.createElement('li');
+    previousLi.className = 'page-item';
+    if (currentPage === 1) {
+        previousLi.classList.add('disabled');
+    }
+    const previousLink = document.createElement('a');
+    previousLink.className = 'page-link';
+    previousLink.href = 'javascript:void(0);';
+    previousLink.textContent = 'Previous';
+    previousLink.addEventListener('click', () => navigatePage(currentPage - 1, totalPages));
+    previousLi.appendChild(previousLink);
+
+    // Add the "1" link before the other page links
+    if (startPage > 1) {
+        const firstPageLi = document.createElement('li');
+        firstPageLi.className = 'page-item';
+        const firstPageLink = document.createElement('a');
+        firstPageLink.className = 'page-link';
+        firstPageLink.href = 'javascript:void(0);';
+        firstPageLink.textContent = '1';
+        firstPageLink.addEventListener('click', () => navigatePage(1, totalPages));
+        firstPageLi.appendChild(firstPageLink);
+        paginationList.appendChild(firstPageLi);
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+        const pageLi = document.createElement('li');
+        pageLi.className = 'page-item';
+        if (i === currentPage) {
+            pageLi.classList.add('active');
+        }
+        const pageLink = document.createElement('a');
+        pageLink.className = 'page-link';
+        pageLink.href = 'javascript:void(0);';
+        pageLink.textContent = i;
+        pageLink.addEventListener('click', () => navigatePage(i, totalPages));
+        pageLi.appendChild(pageLink);
+        paginationList.appendChild(pageLi);
+    }
+
+    // Add the "Next" link after the page links
+    const nextLi = document.createElement('li');
+    nextLi.className = 'page-item';
+    if (currentPage === totalPages) {
+        nextLi.classList.add('disabled');
+    }
+    const nextLink = document.createElement('a');
+    nextLink.className = 'page-link';
+    nextLink.href = 'javascript:void(0);';
+    nextLink.textContent = 'Next';
+    nextLink.addEventListener('click', () => navigatePage(currentPage + 1, totalPages));
+    nextLi.appendChild(nextLink);
+    paginationList.appendChild(nextLi);
+    paginationList.insertBefore(previousLi, paginationList.firstChild);
+}
+
+    function navigatePage(pageNumber, totalPages) {
+    if (pageNumber < 1 || pageNumber > totalPages) {
+        return;
+    }
+
+    const tableBody = document.getElementById('tableBody');
+    const rowsPerPage = 10;
+    const startIndex = (pageNumber - 1) * rowsPerPage;
+    const endIndex = Math.min(startIndex + rowsPerPage, totalRows);
+
+    // Clear existing table content
+    tableBody.innerHTML = '';
+
+    rows.forEach((row, rowIndex) => {
+        if (rowIndex >= 1 && rowIndex >= startIndex && rowIndex < endIndex) {
+            const tr = document.createElement('tr');
+            const columnsToShow = [11, 3, 14, 4]; // Indices of columns to show
+            columnsToShow.forEach((columnIndex) => {
+                const td = document.createElement('td');
+                td.textContent = row[columnIndex] || '';
+                tr.appendChild(td);
+            });
+            tableBody.appendChild(tr);
+        }
+    });
+
+    // Update pagination links
+    updatePaginationLinks(pageNumber, totalPages);
+}
+
+</script>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<!--Table Daerah Penjualan End-->
 
 {% endblock content %}
 
